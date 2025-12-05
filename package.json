@@ -1,0 +1,18 @@
+{
+  "name": "strands_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "strands-agent:build": "pnpm --filter strands-agent run package",
+    "cdk:build": "pnpm --filter cdk run build",
+    "cdk:synth": "pnpm strands-agent:build && pnpm --filter cdk run synth",
+    "cdk:deploy": "pnpm strands-agent:build && pnpm --filter cdk run deploy",
+    "cdk:destroy": "pnpm --filter cdk run destroy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.20.0"
+}
